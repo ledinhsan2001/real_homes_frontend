@@ -1,0 +1,23 @@
+
+  .sale{
+    background-color: #5BBF38;
+    display: flex;
+    font-size: x-large;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+  .rental{
+    background-color: #5326D4;
+    display: flex;
+    font-size: x-large;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }

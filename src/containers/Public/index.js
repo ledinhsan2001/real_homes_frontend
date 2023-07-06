@@ -1,0 +1,17 @@
+export { default as Home } from "./Home";
+export { default as Header } from "./Header/Header";
+export { default as Footer } from "./Footer/Footer";
+export { default as Login } from "./Account/Login";
+export { default as Register } from "./Account/Register";
+export { default as Rental } from "./Rental/Rental";
+export { default as BuySell } from "./BuySell/BuySell";
+export { default as ServicePrice } from "./ServicePrice";
+export { default as Blog } from "./Blog";
+export { default as Main } from "./Main/Main";
+export { default as Search } from "./Search/Search";
+export { default as UrlHomePage } from "./UrlHomePage";
+export { default as List } from "./List";
+export { default as DetailRealHome } from "./DetailRealHome";
+export { default as HomePage } from "./HomePage";
+export { default as PersonalPage } from "./PersonalPage";
+export { default as BlogDetail } from "./BlogDetail";

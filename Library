@@ -1,0 +1,18 @@
+npm i react-router-dom firebase bootstrap sweetalert2 redux react-redux redux-persist --save -dev
+npm install -D tailwindcss postcss autoprefixer
+
+Import persistGate into file main bọc file App/ => Giúp delay render UI cho tới khi store updated.(import { PersistGate } from 'redux-persist/intergration/react'; import {Provider} from 'react-redux'; <Provider><PersistGate><App/></PersistGate></Provider>)
+
+npm i redux-thunk: xử lý async. axios: call api. 
+npm i axios --save -dev
+npm i react-icons --save -dev
+
+useCallback giữ cho một hàm không được tạo lại lần nữa, dựa trên mảng các phần phụ thuộc.
+
+npm i react-paginate --save -dev
+npm i moment --save -dev để hiện thị theo khoảng cách thời gian
+npm install react-loader-spinner --save -dev  loading
+npm install react-slick slick-carousel --save -dev  slick image
+npm i leaflet react-leaflet --save -dev  gg maps. link: https://leafletjs.com/plugins.html
+npm i leaflet-geosearch --save -dev   input addres =>  geography lat,long 
+npm install react-quilljs quill    format textarea link: https://www.npmjs.com/package/react-quilljs
