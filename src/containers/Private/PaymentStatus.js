@@ -102,7 +102,6 @@ const PaymentStatus = () => {
                                 const images = item?.images?.url
                                     ? JSON.parse(item?.images?.url)
                                     : [];
-
                                 return (
                                     <tr
                                         key={item._id}

@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import List from "../List";
 import { useSelector } from "react-redux";
-import { ItemSidebarMain, NewPost, Recommend } from "../../components/index";
+import { ItemSidebarMain, Recommend } from "../../components/index";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";

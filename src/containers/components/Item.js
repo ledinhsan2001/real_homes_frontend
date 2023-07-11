@@ -10,6 +10,7 @@ import { actionGetSavePostLimit } from "../../store/actions";
 import { MdAccessTime } from "react-icons/md";
 import moment from "moment";
 import "moment/locale/vi";
+import { createSummary } from "../../utils/dropTagHtml";
 
 const {
     FaStar,
@@ -256,7 +257,7 @@ const Item = ({
                     </div>
                 </div>
                 <p
-                    className="content max-h-[100px] mb-3 text-left"
+                    className="content h-[120px] mb-3 text-left"
                     style={{
                         paddingLeft: "10px",
                         whiteSpace: "pre-wrap",
@@ -266,7 +267,7 @@ const Item = ({
                         color: "gray",
                     }}
                 >
-                    {content}
+                    {`${createSummary(content.slice(0, 400))}...`}
                 </p>
                 <div className="contact flex justify-between">
                     {sold ? (

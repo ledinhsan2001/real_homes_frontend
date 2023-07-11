@@ -180,7 +180,6 @@ const PaymentHistory = () => {
                                           item_payment?.real_home?.images?.url
                                       )
                                     : [];
-
                                 return (
                                     <tr
                                         key={item_payment._id}

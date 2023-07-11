@@ -41,11 +41,10 @@ const Header = () => {
                 dispatch(actions.realHomeByUserUnPay());
             }, 2000);
         }
-        // if (isLoggedIn && !user_data) {
+        // if (!isLoggedIn && !user_data) {
         //     dispatch(logout());
         //     navigate(`/${path.LOGIN}`);
         // }
-        // console.log("ok");
     }, [isLoggedIn]);
 
     useEffect(() => {
@@ -66,6 +65,15 @@ const Header = () => {
     };
     const leaveListItem = () => {
         setShow(false);
+    };
+
+    const handlePushNew = (e) => {
+        e.preventDefault();
+        if (!isLoggedIn) {
+            navigate(`/${path.LOGIN}`);
+        } else {
+            navigate(`/rieng-tu/${path.CREATE_POST}`);
+        }
     };
 
     return (
@@ -316,8 +324,10 @@ const Header = () => {
                             </div>
                         </Link>
                         <Link
-                            to={`/rieng-tu/${path.CREATE_POST}`}
                             className="bg-red text-white rounded-xl pr-2 hover:drop-shadow-2xl hover:translate-y-2"
+                            onClick={(e) => {
+                                handlePushNew(e);
+                            }}
                         >
                             <div className="bg-red-500 m-2 text-white rounded-xl pr-2 flex justify-item items-center hover:font-bold text-lg h-[40px] w-[140px]">
                                 <img

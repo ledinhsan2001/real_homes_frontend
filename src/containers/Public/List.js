@@ -46,16 +46,16 @@ const List = () => {
             }
         }
 
-        // reset sort_id and new_type_id
-        let check_reset = Object.entries(obj_search_id).filter(
-            (item) => item[0] === "sort_id"
-        );
-        // reset active sort_id
-        if (check_reset.length === 0) {
-            setsortActive(0);
-            let element = document.getElementById("filter_new_type_id");
-            element.value = 3;
-        }
+        // // reset sort_id and new_type_id
+        // let check_reset = Object.entries(obj_search_id).filter(
+        //     (item) => item[0] === "sort_id"
+        // );
+        // // reset active sort_id
+        // if (check_reset.length === 0) {
+        //     setsortActive(0);
+        //     let element = document.getElementById("filter_new_type_id");
+        //     element.value = 3;
+        // }
 
         let page_value = params.get("page");
         let page = +page_value > 0 ? +page_value - 1 : 0;
@@ -63,6 +63,7 @@ const List = () => {
 
         dispatch(realHomeLimit(obj_search_id));
         setCurrentPage(+page);
+        // eslint-disable-next-line
     }, [params, location.search]);
 
     function handlePageClick(e) {

@@ -119,19 +119,19 @@ const Payment = ({
                     </div>
                     <div className="flex justify-between p-2">
                         <p className="text-start">Loại tin:</p>
-                        {payload.news_type === "Tin đặc biệt" && (
+                        {payload.news_type === 0 && (
                             <p className="font-bold text-[#E51717]">
-                                {payload.news_type}
+                                Tin đặc biệt
                             </p>
                         )}
-                        {payload.news_type === "Tin đặc sắc" && (
+                        {payload.news_type === 1 && (
                             <p className="font-bold text-[#ED0CC9]">
-                                {payload.news_type}
+                                Tin đặc sắc
                             </p>
                         )}
-                        {payload.news_type === "Tin thường" && (
+                        {payload.news_type === 2 && (
                             <p className="font-bold text-blue-700">
-                                {payload.news_type}
+                                Tin thường
                             </p>
                         )}
                     </div>

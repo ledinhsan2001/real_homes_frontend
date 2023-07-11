@@ -41,9 +41,9 @@ const GetPayment = () => {
     return (
         <div>
             <div>
-                <div class="grid h-[800px] px-4 bg-white place-content-center">
-                    <div class="text-center">
-                        <div class="font-black text-green-400 text-6xl">
+                <div className="grid h-[800px] px-4 bg-white place-content-center">
+                    <div className="text-center">
+                        <div className="font-black text-green-400 text-6xl">
                             Đang thực hiện thanh toán.
                         </div>
                     </div>

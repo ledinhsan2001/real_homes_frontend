@@ -49,9 +49,6 @@ export const path = {
 
 export const title = {
     HeaderSearch: "TÌM KIẾM NHÀ ĐẤT",
-    HeaderMain: "Mua bán bất động sản giá tốt 2023",
-    titleSale: "Nhà Đất Bán",
-    titleRental: "Nhà Đất Cho Thuê",
 };
 //Mua bán bất động sản => mua-ban-bat-dong-san
 export const formatUniToString = (str) => {

@@ -6,6 +6,7 @@ import icons from "../../utils/icons";
 import { mdi_user, pushnew_black } from "../../assets/images";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../store/actions/auth";
+import { delDataEdit } from "../../store/actions";
 
 const {
     MdPostAdd,
@@ -53,7 +54,6 @@ const SideBar = () => {
             className="w-[290px] flex-none bg-white p-4 border-solid h-[100%]"
             onClick={(e) => {
                 e.stopPropagation();
-                setactive("");
             }}
         >
             <Link
@@ -87,6 +87,7 @@ const SideBar = () => {
                     onClick={(e) => {
                         e.stopPropagation();
                         setactive("dang-tin");
+                        dispatch(delDataEdit());
                     }}
                     to={`/rieng-tu/${path.CREATE_POST}`}
                     className={`flex p-2 border-b ${

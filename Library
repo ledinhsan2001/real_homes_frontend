@@ -16,3 +16,5 @@ npm install react-slick slick-carousel --save -dev  slick image
 npm i leaflet react-leaflet --save -dev  gg maps. link: https://leafletjs.com/plugins.html
 npm i leaflet-geosearch --save -dev   input addres =>  geography lat,long 
 npm install react-quilljs quill    format textarea link: https://www.npmjs.com/package/react-quilljs
+
+npm install --save-dev @babel/plugin-proposal-private-property-in-object
